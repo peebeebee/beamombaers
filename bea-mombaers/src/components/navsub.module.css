@@ -1,0 +1,55 @@
+.subnavheader {
+    font-size: 30px;
+    margin: 8px 0 16px;
+}
+
+.subnavlist {
+    padding: 0;
+}
+
+.subnavlist .subnavlist {
+    margin-left: 16px;
+}
+
+.subnavlist__item {
+    display: block;
+}
+
+.subnavlink {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    transition: 100ms ease-out transform;
+}
+
+.subnavlink:hover {
+    transform: translateX(10px);
+}
+
+.dropdownLabel {
+    cursor: pointer;
+    display: block;
+    transition: 100ms ease-out transform;
+}
+
+.dropdownLabel:hover {
+    transform: translateX(10px);
+}
+
+.dropdownCheckbox {
+    display: none;
+}
+
+.dropdownCheckbox + .dropdownList {
+    transform: rotateX(-90deg) translateX(0%);
+    transform-origin: top center;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 300ms transform ease-out, 300ms opacity ease-out;
+}
+
+.dropdownCheckbox:checked + .dropdownList {
+    opacity: 1;
+    transform: rotateX(0) translateX(0);
+    visibility: visible;
+}
