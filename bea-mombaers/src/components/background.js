@@ -1,12 +1,12 @@
 import * as React from "react";
-import * as styles from "./background.module.css";
+import "./background.scss";
 
 export default function Background({children}) {
     return (
-        <div className={styles.slider}>
+        <div className="slider">
             {
                 React.Children.map(children, (child) => {
-                    return <div className={styles.slide}>{child}</div>
+                    return <div className="slider__slide">{child}</div>
                 })
             }
         </div>
