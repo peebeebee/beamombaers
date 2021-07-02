@@ -1,20 +1,10 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import Background from "../components/background";
-import { StaticImage } from "gatsby-plugin-image";
+import LayoutAbout from "../components/layout-about";
 
 export default function AboutPage() {
     return (
         <div>
-            <Background>
-                <StaticImage
-                    src="../images/slides/slide01.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
-                />
-            </Background>
-            <Layout>
+            <LayoutAbout>
                 <p>
                     Don’t ask Bea to define her style: she lets her interiors speak for themselves.
                     An eclectic mix of vintage furniture, unique collectibles, minimalist design and worldly influences.
@@ -44,7 +34,7 @@ export default function AboutPage() {
                     Many of the projects in this book are the result of these two virtuosos’ teamwork.
                     Their roles aren’t exactly divided in the most classic way: both the architect and the decorator
                 </p>
-            </Layout>
+            </LayoutAbout>
         </div>
     );
 }

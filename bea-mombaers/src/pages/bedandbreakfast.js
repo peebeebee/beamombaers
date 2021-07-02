@@ -5,9 +5,10 @@ import Background from "../components/background";
 export default function bedAndBreakfastPage() {
     return (
         <div>
-            <Background />
+            <Background>
+
+            </Background>
             <Layout>
-                <h1>b&b</h1>
                 <p>
                     On a stunning location in Knokke-le Zoute, close to The Zwin nature reserve, Bea Mombaers B&B offers the weary traveller a beautiful place to stay.
                     Enjoy the most delicious breakfast at the large guest table or in the garden next to the swimming pool.

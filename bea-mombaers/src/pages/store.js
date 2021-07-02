@@ -15,7 +15,6 @@ export default function StorePage() {
                 />
             </Background>
             <Layout>
-                <h1>store</h1>
                 <p>
                     Kustlaan 289<br/>
                     8300 Knokke

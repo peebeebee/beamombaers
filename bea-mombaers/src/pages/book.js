@@ -16,7 +16,6 @@ export default function bookPage() {
             </Background>
             <Layout>
                 <main>
-                    <h1>book</h1>
                     <p>available at <a href="https://www.lusterweb.com/">lusterweb.com</a></p>
                 </main>
             </Layout>
