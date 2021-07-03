@@ -14,9 +14,7 @@ export default function HomePage() {
                     aspectRatio={16 / 9}
                 />
             </Background>
-            <Layout>
-                <main></main>
-            </Layout>
+            <Layout />
         </div>
     );
 }

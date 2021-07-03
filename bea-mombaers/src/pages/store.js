@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Background from "../components/background";
+import NavSub from "../components/navsub"
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function StorePage() {
@@ -14,7 +15,9 @@ export default function StorePage() {
                     aspectRatio={16 / 9}
                 />
             </Background>
-            <Layout>
+            <Layout
+                submenu={<NavSub title='store' />}
+            >
                 <p>
                     Kustlaan 289<br/>
                     8300 Knokke

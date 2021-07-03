@@ -1,6 +1,5 @@
 .subnavheader {
     font-size: 30px;
-    margin: 8px 0 16px;
 }
 
 .subnavlist {
@@ -52,4 +51,10 @@
     opacity: 1;
     transform: rotateX(0) translateX(0);
     visibility: visible;
+}
+
+@media only screen and (max-width: 1023px) {
+    .subnavheader {
+        margin: 8px 0 16px;
+    }
 }

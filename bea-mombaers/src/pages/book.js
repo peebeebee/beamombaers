@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Background from "../components/background";
 import { StaticImage } from "gatsby-plugin-image";
+import NavSub from "../components/navsub";
 
 export default function bookPage() {
     return (
@@ -14,7 +15,9 @@ export default function bookPage() {
                     aspectRatio={16 / 9}
                 />
             </Background>
-            <Layout>
+            <Layout
+                submenu={<NavSub title='book' />}
+            >
                 <main>
                     <p>available at <a href="https://www.lusterweb.com/">lusterweb.com</a></p>
                 </main>

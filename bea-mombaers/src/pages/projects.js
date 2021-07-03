@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Background from "../components/background";
 import { StaticImage } from "gatsby-plugin-image";
+import NavSub from "../components/navsub";
 
 export default function projectsPage() {
     return (
@@ -14,7 +15,9 @@ export default function projectsPage() {
                     aspectRatio={16 / 9}
                 />
             </Background>
-            <Layout>
+            <Layout
+                submenu={<NavSub title='projects' />}
+            >
                 <main>
                     <p>an ongoing collaboration with interior architect Peter Ivens</p>
                     <p>
