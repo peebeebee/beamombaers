@@ -1,38 +1,38 @@
-.nav {
+.nav-main {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.nav::before {
+.nav-main::before {
     content: 'menu';
     display: block;
     position: absolute;
     transition: 200ms opacity ease-out,
                 200ms transform ease-out;
     opacity: 1;
-}
 
-.nav__item {
-    text-decoration: none;
-    color: #000;
-    transition: 200ms opacity ease-out;
-    opacity: 0;
-}
+    .nav__item {
+        text-decoration: none;
+        color: #000;
+        transition: 200ms opacity ease-out;
+        opacity: 0;
+    }
 
-.nav__item div {
-    transition: 100ms ease-out transform;
-}
+    .nav__item div {
+        transition: 100ms ease-out transform;
+    }
 
-.nav__item:hover div {
-    transform: translateX(10px);
-}
+    .nav__item:hover div {
+        transform: translateX(10px);
+    }
 
-.nav:hover::before {
-    opacity: 0;
-    transform: translateY(-16px);
-}
+    .nav:hover::before {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
 
-.nav:hover .nav__item {
-    opacity: 1;
+    .nav:hover .nav__item {
+        opacity: 1;
+    }
 }

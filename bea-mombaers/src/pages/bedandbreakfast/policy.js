@@ -1,10 +1,8 @@
 import * as React from "react";
-import Layout from "../../components/layout";
 
 export default function BedAndBreakfastPolicyPage() {
     return (
-        <div>
-            <Layout>
+        <div className="page">
                 <h3>Check in</h3>
                 <p>
                     Check- ins are by appointment only.
@@ -32,7 +30,6 @@ export default function BedAndBreakfastPolicyPage() {
                 </p>
                 <h3>Deposit</h3>
                 <p>A 50% deposit is required for all reservations.</p>
-            </Layout>
         </div>
     );
 }
