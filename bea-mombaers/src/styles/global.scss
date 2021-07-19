@@ -11,20 +11,36 @@
   font-weight: 500;
 }
 
+html {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Bea", "Helvetica", "Arial", sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-body {
-  margin: 0;
-  font-family: "Bea", "Helvetica", "Arial", sans-serif;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1;
-  overflow-y: scroll;
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 
 .grid {
