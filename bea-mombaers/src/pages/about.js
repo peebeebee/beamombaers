@@ -9,7 +9,6 @@ export default function AboutPage() {
         <div className="page">
             <div className="grid grid--fixed grid--about">
                 <div className="grid__header">
-                    <Header></Header>
                 </div>
                 <div className="grid__picture">
                     <div className="profile-pic">
@@ -26,11 +25,10 @@ export default function AboutPage() {
                         <a href="https://www.instagram.com/itemsbybea">Instagram</a>
                     </div>
                 </div>
-                <div className="grid__menu">
-                    <NavMain></NavMain>
-                </div>
             </div>
             <div className="grid grid--about">
+                <div className="grid__header">
+                </div>
                 <div className="grid__content">
                     <main>
                         <p>
@@ -66,7 +64,6 @@ export default function AboutPage() {
                 </div>
             </div>
             <Background>
-
             </Background>
         </div>
     );

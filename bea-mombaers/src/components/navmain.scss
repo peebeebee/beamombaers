@@ -2,21 +2,25 @@
     display: flex;
     flex-direction: column;
     position: relative;
-}
 
-.nav-main::before {
-    content: 'menu';
-    display: block;
-    position: absolute;
-    transition: 200ms opacity ease-out,
-                200ms transform ease-out;
-    opacity: 1;
+    &::before {
+        content: 'menu';
+        display: block;
+        position: absolute;
+        transition: 200ms opacity ease-out,
+                    200ms transform ease-out;
+        opacity: 1;
+    }
 
     .nav__item {
         text-decoration: none;
         color: #000;
         transition: 200ms opacity ease-out;
         opacity: 0;
+
+        &.nav__item--about {
+            margin-bottom: 10px;
+        }
     }
 
     .nav__item div {
@@ -27,12 +31,15 @@
         transform: translateX(10px);
     }
 
-    .nav:hover::before {
-        opacity: 0;
-        transform: translateY(-16px);
-    }
+    &:focus-within,
+    &:hover {
+        &::before {
+            opacity: 0;
+            transform: translateY(-16px);
+        }
 
-    .nav:hover .nav__item {
-        opacity: 1;
+        .nav__item {
+            opacity: 1;
+        }
     }
 }

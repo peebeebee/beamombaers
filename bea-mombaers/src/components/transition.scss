@@ -1,0 +1,18 @@
+.slider {
+  transition: opacity 500ms ease-in-out;
+
+  .transition-item.exit & {
+    opacity: 0;
+  }
+}
+
+// .submenu,
+// main {
+//   transition: opacity 100ms ease-in-out,
+//               transform 100ms ease-in-out;
+
+//   .transition-item.exit & {
+//     opacity: 0;
+//     transform: translateY(-100px);
+//   }
+// }

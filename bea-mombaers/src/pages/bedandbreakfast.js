@@ -1,20 +1,14 @@
 import * as React from "react";
 import Background from "../components/background";
-import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
-import NavMain from "../components/navmain";
-import Nav from "../components/nav";
+import NavSub from "../components/navsub";
 
 export default function bedAndBreakfastPage() {
     return (
         <div className="page">
             <div className="grid grid--fixed">
-                <div className="grid__header">
-                    <Header></Header>
-                </div>
                 <div className="grid__submenu">
-                    <h2>b&b</h2>
-                    <Nav
+                    <NavSub
                         title="b&b"
                         items={[{
                             id: 'contact',
@@ -43,9 +37,6 @@ export default function bedAndBreakfastPage() {
                             }]
                         }]}
                     />
-                </div>
-                <div className="grid__menu">
-                    <NavMain></NavMain>
                 </div>
             </div>
             <div className="grid">

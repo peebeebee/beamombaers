@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby";
+import "./nav.scss";
 
 function NavLink({item}) {
     if(!item.children) {
@@ -11,9 +12,11 @@ function NavLink({item}) {
     } else {
         return (
             <div>
-                <label htmlFor="dropdown-rooms" className="dropdown-label">rooms</label>
-                <input type="checkbox" id="dropdown-rooms" className="dropdown-checkbox" />
-                <Nav items={item.children} />
+                <label htmlFor={`dropdown-${item.id}`} className="dropdown-label">{item.text}</label>
+                <input type="checkbox" id={`dropdown-${item.id}`} className="dropdown-checkbox" />
+                <div className="dropdown-list">
+                    <Nav items={item.children} />
+                </div>
             </div>
         )
     }
@@ -21,7 +24,7 @@ function NavLink({item}) {
 
 export default function Nav(props) {
     return (
-        <nav className="nav">
+        <nav className={`nav ${props.className}`}>
             <ul className="nav__list nav-list">
             {props.items?.map(item =>
                 <li className="nav-list__item">

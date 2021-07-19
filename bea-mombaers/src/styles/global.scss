@@ -45,10 +45,15 @@ body {
     margin-left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    pointer-events: none;
+
+    & > * {
+      pointer-events: all;
+    }
   }
 
   &.grid--about {
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: 30px min-content 1fr;
     grid-template-areas:
     "a a c c c d e"
     "p p c c c d e"
@@ -94,10 +99,22 @@ body {
     "b b"
     "c c";
 
+    &.grid--about {
+      grid-template-rows: 30px 100px 1fr 1fr 50px;
+      grid-template-areas:
+      "a e"
+      "p p"
+      "b b"
+      "c c"
+      "s s";
+    }
+
+    &.grid--fixed {
+      // position: absolute;
+    }
+
     .grid__menu {
-      min-width: 80px;
-      position: sticky;
-      right: 0;
+      // min-width: 80px;
     }
 
     .grid__content {

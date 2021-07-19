@@ -1,0 +1,35 @@
+.nav {
+  .nav-list {
+    .nav-list__item {
+      display: block;
+    }
+  }
+
+  .dropdown-label {
+    cursor: pointer;
+    display: block;
+    transition: 100ms ease-out transform;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+
+  .dropdown-checkbox {
+    display: none;
+  }
+
+  .dropdown-checkbox + .dropdown-list {
+    transform: rotateX(-90deg) translateX(0%);
+    transform-origin: top center;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 300ms transform ease-out, 300ms opacity ease-out;
+  }
+
+  .dropdown-checkbox:checked + .dropdown-list {
+      opacity: 1;
+      transform: rotateX(0) translateX(0);
+      visibility: visible;
+  }
+}

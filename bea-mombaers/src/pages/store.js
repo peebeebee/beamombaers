@@ -1,8 +1,7 @@
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
-import { StaticImage } from "gatsby-plugin-image";
 import Header from "../components/header";
-import NavMain from "../components/navmain";
 
 export default function StorePage() {
     return (
@@ -12,10 +11,9 @@ export default function StorePage() {
                     <Header></Header>
                 </div>
                 <div className="grid__submenu">
-                    <h2>store</h2>
-                </div>
-                <div className="grid__menu">
-                    <NavMain></NavMain>
+                    <div className="submenu">
+                        <h2>store</h2>
+                    </div>
                 </div>
             </div>
             <div className="grid">
