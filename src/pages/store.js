@@ -24,7 +24,7 @@ export default function StorePage() {
                             8300 Knokke
                         </p>
                         <p>
-                            0032 000 000 000<br/>
+                            0032 50 603 606<br/>
                             <a href="mailto:items@beamombaers.com">items@beamombaers.com</a>
                         </p>
                     </main>
