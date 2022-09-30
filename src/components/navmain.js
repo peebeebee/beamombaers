@@ -11,9 +11,6 @@ export default function NavMain() {
             <Link className="nav__item" to="/projects">
                 <div>projects</div>
             </Link>
-            <Link className="nav__item" to="/bedandbreakfast">
-                <div>b&b</div>
-            </Link>
             <Link className="nav__item" to="/store">
                 <div>store</div>
             </Link>
