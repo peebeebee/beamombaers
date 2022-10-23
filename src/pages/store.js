@@ -1,15 +1,11 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
-import Header from "../components/header";
 
 export default function StorePage() {
     return (
         <div className="page">
             <div className="grid grid--fixed">
-                <div className="grid__header">
-                    <Header></Header>
-                </div>
                 <div className="grid__submenu">
                     <div className="submenu">
                         <h2>store</h2>

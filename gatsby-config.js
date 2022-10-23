@@ -17,7 +17,15 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          quality: 80,
+          breakpoints: [480, 1080, 1920, 4000],
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",

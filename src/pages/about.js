@@ -1,8 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
-import Header from "../components/header";
-import NavMain from "../components/navmain";
+
+import "./about.scss";
 
 export default function AboutPage() {
     return (
@@ -30,7 +30,7 @@ export default function AboutPage() {
                 <div className="grid__header">
                 </div>
                 <div className="grid__content">
-                    <main>
+                    <main className="about-main">
                         <p>
                             Don’t ask Bea to define her style: she lets her interiors speak for themselves.
                             An eclectic mix of vintage furniture, unique collectibles, minimalist design and worldly influences.
@@ -63,8 +63,7 @@ export default function AboutPage() {
                     </main>
                 </div>
             </div>
-            <Background>
-            </Background>
+            {/* <Background></Background> */}
         </div>
     );
 }

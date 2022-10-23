@@ -24,7 +24,28 @@ export default function projectsPage() {
             </div>
             <Background>
                 <StaticImage
+                    src="../images/slides/slide01.jpg"
+                    alt=""
+                    layout="fullWidth"
+                    aspectRatio={16 / 9}
+                />
+                
+                <StaticImage
                     src="../images/slides/slide02.jpg"
+                    alt=""
+                    layout="fullWidth"
+                    aspectRatio={16 / 9}
+                />
+
+                <StaticImage
+                    src="../images/slides/slide03.jpg"
+                    alt=""
+                    layout="fullWidth"
+                    aspectRatio={16 / 9}
+                />
+
+                <StaticImage
+                    src="../images/slides/slide04.jpg"
                     alt=""
                     layout="fullWidth"
                     aspectRatio={16 / 9}

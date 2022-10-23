@@ -14,7 +14,7 @@ export default function Layout({children, location}) {
                     <NavMain></NavMain>
                 </div>
             </div>
-            <Transition location={location}>
+            <Transition location={location} className="page-transition">
                 {children}
             </Transition>
         </div>
