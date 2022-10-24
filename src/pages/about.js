@@ -1,6 +1,5 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
-import Background from "../components/background";
 
 import "./about.scss";
 

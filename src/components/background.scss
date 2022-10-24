@@ -15,7 +15,6 @@
     transition: 900ms cubic-bezier(0.83, 0.2, 0.04, 0.55) opacity;
 
     &[data-active="true"] {
-      display: grid;
       opacity: 1;
     }
   }
@@ -55,12 +54,18 @@
     }
 
     &:hover::before,
-    &[data-active="true"]::before  {
-      background-color: #fff;
+    &[data-active="true"] {
+      &::before  {
+        background-color: #fff;
+      }
     }
 
-    &[data-active="true"]::before  {
-      opacity: 0;
+    &[data-active="true"] {
+      pointer-events: none;
+      
+      &::before  {
+        opacity: 0;
+      }
     }
   }
 }

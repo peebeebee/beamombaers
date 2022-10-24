@@ -1,6 +1,7 @@
-import * as React from "react";
-import Background from "../components/background";
 import { StaticImage } from "gatsby-plugin-image";
+import * as React from "react";
+
+import "./book.scss";
 
 export default function bookPage() {
     return (
@@ -18,15 +19,16 @@ export default function bookPage() {
                         <p>available at <a href="https://www.lusterweb.com/">lusterweb.com</a></p>
                     </main>
                 </div>
+                <div className="grid__book">
+                    <div className="book">
+                        <StaticImage
+                            src="../images/book.png"
+                            imgStyle={{objectFit: 'contain'}}
+                            alt="Preview of Bea Mombaers' book items & Interiors"
+                        />
+                    </div>
+                </div>
             </div>
-            <Background>
-                <StaticImage
-                    src="../images/slides/slide04.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
-                />
-            </Background>
         </div>
     );
 }

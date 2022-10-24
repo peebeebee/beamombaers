@@ -2,6 +2,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
 
+import "./projects.scss";
+
 export default function projectsPage() {
     return (
         <div className="page">
@@ -23,33 +25,139 @@ export default function projectsPage() {
                 </div>
             </div>
             <Background>
-                <StaticImage
-                    src="../images/slides/slide01.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
-                />
-                
-                <StaticImage
-                    src="../images/slides/slide02.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
-                />
+
+
+                <div className="split">
+                    <div className="split__item">
+                    </div>
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                                src="../images/slides/slide_project_01.jpg"
+                                alt=""
+                                layout="fullWidth"
+                        />
+                    </div>
+                </div>
 
                 <StaticImage
-                    src="../images/slides/slide03.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
+                        src="../images/slides/slide_project_02.jpg"
+                        alt=""
+                        layout="fullWidth"
                 />
 
-                <StaticImage
-                    src="../images/slides/slide04.jpg"
-                    alt=""
-                    layout="fullWidth"
-                    aspectRatio={16 / 9}
-                />
+                <div className="split">
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_03a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_03b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_04a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_04b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_05a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_05b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_06a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item">
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_07a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_07b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_08a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_08b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
+
+                <div className="split">
+                    <div className="split__item split__item--padding">
+                        <StaticImage
+                            src="../images/slides/slide_project_09a.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                    <div className="split__item">
+                        <StaticImage
+                            src="../images/slides/slide_project_09b.jpg"
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
             </Background>
         </div>
     );

@@ -28,7 +28,7 @@ export default function StorePage() {
             </div>
             <Background>
                 <StaticImage
-                    src="../images/slides/slide03.jpg"
+                    src="../images/slides/slide_store_01.jpg"
                     alt=""
                     layout="fullWidth"
                     aspectRatio={16 / 9}

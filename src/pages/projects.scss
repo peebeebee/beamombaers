@@ -1,0 +1,15 @@
+.split {
+  display: flex;
+
+  .split__item {
+    flex: 0 0 50%;
+
+    &.split__item--padding {
+      padding: 15vh 10vw;
+    }
+
+    > .gatsby-image-wrapper {
+      height: 100%;
+    }
+  }
+}

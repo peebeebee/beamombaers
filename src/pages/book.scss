@@ -1,0 +1,16 @@
+.grid {
+  .grid__book {
+    grid-column: 2 / 7;
+  }
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+
+  > .gatsby-image-wrapper {
+    height: 120%;
+  }
+}
