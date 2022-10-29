@@ -58,6 +58,7 @@ main a:hover {
 
   &.grid--fixed {
     position: fixed;
+    top: 0;
     z-index: 100;
     margin-left: 50%;
     transform: translateX(-50%);

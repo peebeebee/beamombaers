@@ -27,19 +27,43 @@
         transition: 100ms ease-out transform;
     }
 
-    .nav__item:hover div {
-        transform: translateX(10px);
+    @media screen and (max-width: 1023px) {
+        &:focus-within {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: red;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                opacity: 0;
+                transform: translateY(-16px);
+            }
+
+            .nav__item {
+                opacity: 1;
+            }
+        }
     }
 
-    &:focus-within,
-    &:hover {
-        &::before {
-            opacity: 0;
-            transform: translateY(-16px);
+    @media screen and (min-width: 1023px) {
+        .nav__item:hover div {
+            transform: translateX(10px);
         }
 
-        .nav__item {
-            opacity: 1;
+        &:hover,
+        &:focus-within {
+            &::before {
+                opacity: 0;
+                transform: translateY(-16px);
+            }
+
+            .nav__item {
+                opacity: 1;
+            }
         }
     }
 }
