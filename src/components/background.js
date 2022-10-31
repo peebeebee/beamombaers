@@ -4,15 +4,14 @@ import "./background.scss";
 
 export default function Background({children}) {
 
-    let currentIndex = 0;
+    const [index, setIndex] = useState(0);
 
-    const [index, setIndex] = useState(currentIndex);
+    setInterval(function() {
+        setIndex(index >= children.length - 1 ? 0 : index + 1);
+    }, 3000);
 
     const goToSlide = (i) => {
-        console.log('goToSlide', i);
-        currentIndex = i;
-        setIndex(currentIndex);
-        console.log('index', index);
+        setIndex(i);
     }
 
     return (
