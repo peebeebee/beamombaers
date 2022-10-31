@@ -6,9 +6,11 @@ export default function Background({children}) {
 
     const [index, setIndex] = useState(0);
 
-    setInterval(function() {
-        setIndex(index >= children.length - 1 ? 0 : index + 1);
-    }, 3000);
+    if(children && children.length) {
+        setInterval(function() {
+            setIndex(index >= children.length - 1 ? 0 : index + 1);
+        }, 3000);
+    }
 
     const goToSlide = (i) => {
         setIndex(i);

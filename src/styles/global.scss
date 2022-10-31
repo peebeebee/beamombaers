@@ -117,13 +117,37 @@ main a:hover {
     "c c";
 
     &.grid--about {
-      grid-template-rows: 30px 100px 1fr 1fr 50px;
+      // grid-template-rows: 30px 100px 1fr 1fr 50px;
       grid-template-areas:
       "a e"
       "p p"
       "b b"
       "c c"
       "s s";
+
+      &.grid--fixed {
+        &::before {
+          content: '';
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 90px;
+          z-index: -1;
+          background: #fff;
+        }
+
+        &::after {
+          content: '';
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100px;
+          z-index: -1;
+          background: #fff;
+        }
+      }
     }
 
     &.grid--fixed {
