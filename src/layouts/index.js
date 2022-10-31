@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/header';
+import NavToggle from '../components/navtoggle';
 import NavMain from '../components/navmain';
 import Transition from '../components/transition';
 
 export default function Layout({children, location}) {
+
+    const [isNavShown, setIsNavShown] = useState(false);
+
+    function setActive() {
+        setIsNavShown(!isNavShown);
+
+        console.log('onActie', isNavShown);
+    }
+
     return (
         <div className="layout">
             <Transition location={location} className="page-transition">
@@ -11,10 +21,15 @@ export default function Layout({children, location}) {
             </Transition>
             <div className="grid grid--fixed">
                 <div className="grid__header">
-                    <Header></Header>
+                    <Header />
                 </div>
                 <div className="grid__menu">
-                    <NavMain></NavMain>
+                    <NavToggle 
+                        isShown={!isNavShown}
+                        onActivate={setActive} />
+                    <NavMain 
+                        onNavigate={setActive}
+                        isNavShown={isNavShown} />
                 </div>
             </div>
         </div>

@@ -93,6 +93,7 @@ main a:hover {
   }
 
   .grid__menu {
+    position: relative;
     grid-area: e;
   }
 
@@ -130,6 +131,7 @@ main a:hover {
     }
 
     .grid__menu {
+      position: relative;
       // min-width: 80px;
     }
 
