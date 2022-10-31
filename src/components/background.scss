@@ -27,9 +27,13 @@
 
 .slider-controls {
   position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 30px;
+  left: 40px;
   display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(calc(-50% - 16px));
 
   .slider-control__dot {
     flex: 0 0 auto;
@@ -46,8 +50,8 @@
       content: '';
       display: block;
       margin: 0 auto;
-      width: 8px;
-      height: 8px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background-color: #000;
       transition: opacity 300ms ease-in-out;
@@ -64,7 +68,7 @@
       pointer-events: none;
       
       &::before  {
-        opacity: 0;
+        opacity: 0.3;
       }
     }
   }
