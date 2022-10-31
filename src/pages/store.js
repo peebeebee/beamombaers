@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
+import "./store.scss";
 
 export default function StorePage() {
     return (
@@ -14,7 +15,7 @@ export default function StorePage() {
             </div>
             <div className="grid">
                 <div className="grid__content">
-                    <main>
+                    <main className="store-content">
                         <p>
                             Kustlaan 289<br/>
                             8300 Knokke
@@ -29,9 +30,10 @@ export default function StorePage() {
             <Background>
                 <StaticImage
                     src="../images/slides/slide_store_01.jpg"
-                    alt=""
+                    alt="Image of the store"
                     layout="fullWidth"
                     aspectRatio={16 / 9}
+                    objectPosition="right"
                 />
             </Background>
         </div>
