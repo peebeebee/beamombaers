@@ -3,7 +3,7 @@ import "./src/styles/global.scss";
 
 // Logs when the client route changes
 export function onRouteUpdate() {
-  console.log('onRouteUpdate');
+  // TODO
   document.body.focus();
 }
 

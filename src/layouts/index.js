@@ -10,8 +10,6 @@ export default function Layout({children, location}) {
 
     function setActive() {
         setIsNavShown(!isNavShown);
-
-        console.log('onActie', isNavShown);
     }
 
     return (

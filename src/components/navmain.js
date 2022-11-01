@@ -5,7 +5,6 @@ import "./navmain.scss";
 export default function NavMain({isNavShown, onNavigate}) {
 
     function onMouseLeave() {
-        console.log('onMouseLeave');
         onNavigate(false);
     }
 

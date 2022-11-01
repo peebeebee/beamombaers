@@ -1,24 +1,25 @@
-import * as React from "react";
-import { useState, Children } from "react";
+import React from "react";
+import { useState, Children, useEffect } from "react";
 import "./background.scss";
 
 export default function Background({children}) {
-
     const [index, setIndex] = useState(0);
 
-    if(children && children.length) {
-        setInterval(function() {
-            setIndex(index >= children.length - 1 ? 0 : index + 1);
-        }, 3000);
-    }
-
-    const goToSlide = (i) => {
-        setIndex(i);
-    }
+    useEffect(() => {
+        if(children && children.length) {
+            const interval = setInterval(() => {
+                setIndex(index >= children.length - 1 ? 0 : index + 1);
+            }, 3000);
+    
+            return () => {
+                clearInterval(interval);
+            };
+        }
+    });
 
     return (
         <div className="background">
-            <div className="slider">
+            <div className="slider" data-test={index}>
                 {
                     Children.map(children, (child, i) => {
                         return <div className="slider__slide" data-active={i === index}>{child}</div>
@@ -30,7 +31,7 @@ export default function Background({children}) {
             <div className="slider-controls">
                 {
                     Children.map(children, (child, i) => {
-                        return <button type="button" className="slider-control__dot" data-active={i === index} onClick={() => goToSlide(i)}>{i}</button>
+                        return <button type="button" className="slider-control__dot" data-active={i === index} onClick={() => setIndex(i)}>{i}</button>
                     })
                 }
             </div>

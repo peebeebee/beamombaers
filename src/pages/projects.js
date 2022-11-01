@@ -16,11 +16,11 @@ export default function projectsPage() {
             </div>
             <div className="grid">
                 <div className="grid__content">
-                    <main>
+                    <main className="project-content">
                         <p>an ongoing collaboration with interior architect Peter Ivens</p>
-                        <p>
+                        <span>
                             <a href="https://peterivens.be/">peterivens.be</a>
-                        </p>
+                        </span>
                     </main>
                 </div>
             </div>
