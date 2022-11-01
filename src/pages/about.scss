@@ -1,6 +1,12 @@
 .profile-pic {
   margin-top: 1rem;
 
+  @media screen and (max-width: 1023px) {
+    .gatsby-image-wrapper {
+      max-height: 50vh;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
     position: fixed;
     max-width: 250px;

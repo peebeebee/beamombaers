@@ -1,90 +1,12 @@
-.slider {
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
 
-  @media screen and (min-width: 1024px) {
-    position: absolute;
-    z-index: -1000;
-
-    .slider__slide {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      z-index: -1000;
-      display: grid;
-      opacity: 0;
-      transition: 900ms cubic-bezier(0.83, 0.2, 0.04, 0.55) opacity;
-
-      &[data-active="true"] {
-        opacity: 1;
-      }
-    }
-
-    .gatsby-image-wrapper {
-      height: 100vh;
-    }
-  }
-}
-
-
-
-.slider-controls {
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1024px) {
-    position: fixed;
-    bottom: 30px;
-    left: 40px;
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin-left: 50%;
-    transform: translateX(calc(-50% - 16px));
-  
-    .slider-control__dot {
-      flex: 0 0 auto;
-      width: 20px;
-      height: 25px;
-      appearance: none;
-      background: none;
-      border: 0;
-      padding: 0;
-      font-size: 0;
-      cursor: pointer;
-  
-      &::before {
-        content: '';
-        display: block;
-        margin: 0 auto;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: #000;
-        transition: opacity 300ms ease-in-out;
-      }
-  
-      &:hover::before,
-      &[data-active="true"] {
-        &::before  {
-          background-color: #fff;
-        }
-      }
-  
-      &[data-active="true"] {
-        pointer-events: none;
-        
-        &::before  {
-          opacity: 0.3;
-        }
-      }
-    }
+  > .gatsby-image-wrapper {
+    height: 100vh;
   }
 }

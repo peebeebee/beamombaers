@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
-import Background from "../components/background";
+import Slider from "../components/slider";
 
 import "./projects.scss";
 
@@ -24,9 +24,7 @@ export default function projectsPage() {
                     </main>
                 </div>
             </div>
-            <Background>
-
-
+            <Slider>
                 <div className="split">
                     <div className="split__item">
                     </div>
@@ -158,7 +156,7 @@ export default function projectsPage() {
                         />
                     </div>
                 </div>
-            </Background>
+            </Slider>
         </div>
     );
 }

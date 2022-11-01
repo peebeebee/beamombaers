@@ -8,10 +8,6 @@ export default function Layout({children, location}) {
 
     const [isNavShown, setIsNavShown] = useState(false);
 
-    function setActive() {
-        setIsNavShown(!isNavShown);
-    }
-
     return (
         <div className="layout">
             <Transition location={location} className="page-transition">
@@ -24,9 +20,9 @@ export default function Layout({children, location}) {
                 <div className="grid__menu">
                     <NavToggle 
                         isShown={!isNavShown}
-                        onActivate={setActive} />
+                        onActivate={() => { setIsNavShown(true) }} />
                     <NavMain 
-                        onNavigate={setActive}
+                        onNavigate={() => { setIsNavShown(false) }}
                         isNavShown={isNavShown} />
                 </div>
             </div>

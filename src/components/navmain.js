@@ -9,16 +9,16 @@ export default function NavMain({isNavShown, onNavigate}) {
              className={isNavShown 
                 ? 'nav-main nav-main--shown'
                 : 'nav-main nav-main--hidden'}>
-            <Link className="nav__item nav__item--about" to="/about">
+            <Link className="nav__item nav__item--about" to="/about" style={{'transitionDelay': '50ms'}}>
                 <div>about</div>
             </Link>
-            <Link className="nav__item" to="/projects">
+            <Link className="nav__item" to="/projects" style={{'transitionDelay': '100ms'}}>
                 <div>projects</div>
             </Link>
-            <Link className="nav__item" to="/store">
+            <Link className="nav__item" to="/store" style={{'transitionDelay': '150ms'}}>
                 <div>store</div>
             </Link>
-            <Link className="nav__item" to="/book">
+            <Link className="nav__item" to="/book" style={{'transitionDelay': '200ms'}}>
                 <div>book</div>
             </Link>
         </nav>
