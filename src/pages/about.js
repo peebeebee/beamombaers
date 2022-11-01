@@ -22,7 +22,6 @@ export default function AboutPage() {
                 <div className="grid__picture">
                     <div className="profile-pic">
                         <StaticImage
-                            width={250}
                             src="../images/bea.jpg"
                             alt="Bea Mombaers standing in her home"
                         />

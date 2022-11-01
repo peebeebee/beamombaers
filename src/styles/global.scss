@@ -117,11 +117,10 @@ main a:hover {
     "c c";
 
     &.grid--about {
-      // grid-template-rows: 30px 100px 1fr 1fr 50px;
+      grid-template-rows: 30px min-content 1fr 50px;
       grid-template-areas:
       "a e"
       "p p"
-      "b b"
       "c c"
       "s s";
 

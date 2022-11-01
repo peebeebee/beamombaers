@@ -19,7 +19,7 @@ export default function Background({children}) {
 
     return (
         <div className="background">
-            <div className="slider" data-test={index}>
+            <div className="slider">
                 {
                     Children.map(children, (child, i) => {
                         return <div className="slider__slide" data-active={i === index}>{child}</div>

@@ -3,14 +3,9 @@ import { Link } from "gatsby";
 import "./navmain.scss";
 
 export default function NavMain({isNavShown, onNavigate}) {
-
-    function onMouseLeave() {
-        onNavigate(false);
-    }
-
     return (
-        <nav onClick={onNavigate}
-             onMouseLeave={onMouseLeave}
+        <nav onClick={() => onNavigate(false)}
+             onMouseLeave={() => onNavigate(false)}
              className={isNavShown 
                 ? 'nav-main nav-main--shown'
                 : 'nav-main nav-main--hidden'}>
