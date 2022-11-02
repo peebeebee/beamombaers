@@ -23,7 +23,7 @@ module.exports = {
       options: {
         defaults: {
           quality: 80,
-          breakpoints: [480, 1080, 1920, 4000],
+          breakpoints: [480, 1080, 1280, 1440, 1920, 2560, 4000],
         }
       }
     },
