@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Bea Mombaers",
-    description: "Bea Mombaers description",
+    description: "Bea Mombaers - interior design",
+    twitterUsername: `@worldofbea`,
+    image: `/gatsby-icon.png`,
     siteUrl: 'https://beamombaers.com'
   },
   plugins: [

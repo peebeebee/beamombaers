@@ -3,6 +3,15 @@ import * as React from "react";
 
 import "./book.scss";
 
+export function Head() {
+    return (
+    <>
+        <title>Bea Mombaers' book: Items & Interiors</title>
+        <meta name="description">This book presents Bea’s work and universe as seen through the lenses of different photographers.</meta>
+    </>
+    )
+}
+
 export default function bookPage() {
     return (
         <div className="page">

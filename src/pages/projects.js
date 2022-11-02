@@ -4,6 +4,15 @@ import Slider from "../components/slider";
 
 import "./projects.scss";
 
+export function Head() {
+    return (
+    <>
+        <title>Bea Mombaers' Book: projects</title>
+        <meta name="description">A peek into the different projects that Bea delivered.</meta>
+    </>
+    )
+}
+
 export default function projectsPage() {
     return (
         <div className="page">

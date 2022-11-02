@@ -3,6 +3,15 @@ import * as React from "react";
 import Background from "../components/background";
 import "./store.scss";
 
+export function Head() {
+    return (
+    <>
+        <title>Bea Mombaers' Book: store</title>
+        <meta name="description">Contact details of Bea Mombaers' store in Knokke</meta>
+    </>
+    )
+}
+
 export default function StorePage() {
     return (
         <div className="page">

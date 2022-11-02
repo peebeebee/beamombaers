@@ -3,6 +3,15 @@ import * as React from "react";
 
 import "./about.scss";
 
+export function Head() {
+    return (
+    <>
+        <title>Bea Mombaers' Book: about Bea</title>
+        <meta name="description">Interior stylist Bea Mombaers is passionate about vintage and design.</meta>
+    </>
+    )
+}
+
 export default function AboutPage() {
     return (
         <div className="page">
@@ -61,7 +70,6 @@ export default function AboutPage() {
                     </main>
                 </div>
             </div>
-            {/* <Background></Background> */}
         </div>
     );
 }

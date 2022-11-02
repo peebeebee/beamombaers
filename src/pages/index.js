@@ -2,7 +2,16 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Background from "../components/background";
 
-export default function HomePage(props) {
+export function Head() {
+    return (
+    <>
+        <title>Bea Mombaers</title>
+        <meta name="description">Interior stylist Bea Mombaers is passionate about vintage and design.</meta>
+    </>
+    )
+}
+
+export default function HomePage() {
     return (
         <div className="page">
             <div className="grid grid--fixed">
@@ -10,7 +19,7 @@ export default function HomePage(props) {
             <Background>
                 <StaticImage
                     src="../images/slides/slide_home_01.jpg"
-                    alt=""
+                    alt="Image from Bea's book"
                     layout="fullWidth"
                     aspectRatio={16 / 9}
                 />
