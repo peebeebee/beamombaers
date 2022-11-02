@@ -23,6 +23,7 @@ export default function bookPage() {
                     <div className="book">
                         <StaticImage
                             src="../images/book.png"
+                            placeholder="blurred"
                             imgStyle={{objectFit: 'contain'}}
                             alt="Preview of Bea Mombaers' book items & Interiors"
                         />
