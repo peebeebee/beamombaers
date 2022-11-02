@@ -6,8 +6,8 @@ import "./about.scss";
 export function Head() {
     return (
     <>
-        <title>Bea Mombaers' Book: about Bea</title>
-        <meta name="description">Interior stylist Bea Mombaers is passionate about vintage and design.</meta>
+        <title>Bea Mombaers: about Bea</title>
+        <meta name="description" content="Interior stylist Bea Mombaers is passionate about vintage and design." />
     </>
     )
 }

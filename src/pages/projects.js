@@ -7,8 +7,8 @@ import "./projects.scss";
 export function Head() {
     return (
     <>
-        <title>Bea Mombaers' Book: projects</title>
-        <meta name="description">A peek into the different projects that Bea delivered.</meta>
+        <title>Bea Mombaers' projects</title>
+        <meta name="description" content="A peek into the different projects that Bea delivered." />
     </>
     )
 }

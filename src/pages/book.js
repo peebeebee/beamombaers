@@ -7,7 +7,7 @@ export function Head() {
     return (
     <>
         <title>Bea Mombaers' book: Items & Interiors</title>
-        <meta name="description">This book presents Bea’s work and universe as seen through the lenses of different photographers.</meta>
+        <meta name="description" content="This book presents Bea’s work and universe as seen through the lenses of different photographers" />
     </>
     )
 }

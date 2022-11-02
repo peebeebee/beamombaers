@@ -6,7 +6,7 @@ export function Head() {
     return (
     <>
         <title>Bea Mombaers</title>
-        <meta name="description">Interior stylist Bea Mombaers is passionate about vintage and design.</meta>
+        <meta name="description" content="Interior stylist Bea Mombaers is passionate about vintage and design." />
     </>
     )
 }
