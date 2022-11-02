@@ -23,7 +23,7 @@ export default function bookPage() {
                 </div>
             </div>
             <div className="grid">
-                <div className="grid__content">
+                <div className="grid__content grid__content--bottom">
                     <main>
                         <p>available at <a href="https://www.lusterweb.com/">lusterweb.com</a></p>
                     </main>

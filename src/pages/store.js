@@ -23,16 +23,16 @@ export default function StorePage() {
                 </div>
             </div>
             <div className="grid">
-                <div className="grid__content">
+                <div className="grid__content grid__content--bottom">
                     <main className="store-content">
                         <p>
                             Kustlaan 289<br/>
                             8300 Knokke
                         </p>
-                        <p>
+                        <span>
                             0032 50 603 606<br/>
                             <a href="mailto:items@beamombaers.com">items@beamombaers.com</a>
-                        </p>
+                        </span>
                     </main>
                 </div>
             </div>

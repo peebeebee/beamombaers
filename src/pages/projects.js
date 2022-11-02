@@ -24,7 +24,7 @@ export default function projectsPage() {
                 </div>
             </div>
             <div className="grid">
-                <div className="grid__content">
+                <div className="grid__content grid__content--bottom">
                     <main className="project-content">
                         <p>an ongoing collaboration with interior architect Peter Ivens</p>
                         <span>

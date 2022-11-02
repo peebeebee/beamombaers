@@ -16,20 +16,22 @@
 .about-main {
   position: relative;
 
-  &::after {
-    position: absolute;
-    right: -1rem;
-    top: 0;
-    content: '';
-    display: block;
-    width: 1px;
-    height: 370px;
-    background-color: #C5C5C5;
-  }
-
   @media screen and (max-width: 1023px) {
     margin-bottom: 120px;
-  }   
+  }
+
+  @media screen and (min-width: 1024px) {
+    &::after {
+      position: absolute;
+      right: -1rem;
+      top: 0;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 370px;
+      background-color: #C5C5C5;
+    }
+  }
 }
 
 .social {

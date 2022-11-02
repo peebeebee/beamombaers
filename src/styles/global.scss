@@ -59,6 +59,7 @@ main a:hover {
   &.grid--fixed {
     position: fixed;
     top: 0;
+    bottom: 0;
     z-index: 100;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -115,6 +116,7 @@ main a:hover {
     "a e"
     "b b"
     "c c";
+    height: auto;
 
     &.grid--about {
       grid-template-rows: 30px min-content 1fr 50px;
@@ -160,6 +162,14 @@ main a:hover {
 
     .grid__content {
       align-self: end;
+            
+      &.grid__content--bottom {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        left: 30px;
+        z-index: 1;
+      }
     }
   }
 }
