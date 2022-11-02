@@ -6,8 +6,8 @@ import "./store.scss";
 export function Head() {
     return (
     <>
-        <title>Bea Mombaers' Book: store</title>
-        <meta name="description">Contact details of Bea Mombaers' store in Knokke</meta>
+        <title>Bea Mombaers' store</title>
+        <meta name="description">Information about Bea Mombaers' store in Knokke</meta>
     </>
     )
 }
