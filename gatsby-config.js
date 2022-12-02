@@ -3,7 +3,7 @@ module.exports = {
     title: "Bea Mombaers",
     description: "Bea Mombaers - interior design",
     twitterUsername: `@worldofbea`,
-    image: `/gatsby-icon.png`,
+    image: `/bea-icon.jpg`,
     siteUrl: 'https://beamombaers.com'
   },
   plugins: [
