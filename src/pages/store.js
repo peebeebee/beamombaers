@@ -31,7 +31,7 @@ export default function StorePage() {
                         </p>
                         <span>
                             0032 50 603 606<br/>
-                            <a href="mailto:items@beamombaers.com">items@beamombaers.com</a>
+                            <a href="mailto:bea@beamombaers.com">bea@beamombaers.com</a>
                         </span>
                     </main>
                 </div>

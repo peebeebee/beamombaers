@@ -20,7 +20,7 @@ export default function AboutPage() {
                 </div>
                 <div className="grid__social">
                     <div className="social">
-                        <a href="mailto:info@beamombaers.com">info@beamombaers.com</a><br />
+                        <a href="mailto:bea@beamombaers.com">bea@beamombaers.com</a><br />
                         <a href="https://www.instagram.com/itemsbybea">Instagram</a>
                     </div>
                 </div>
