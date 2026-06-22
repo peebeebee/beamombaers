@@ -10,12 +10,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-layout",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "trackingXX",
-      },
-    },
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-sharp",
