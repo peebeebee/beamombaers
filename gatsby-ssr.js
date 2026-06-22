@@ -1,4 +1,4 @@
-export function onRenderBody({ setHtmlAttributes, setBodyAttributes }) {
+export function onRenderBody({ setHtmlAttributes, setBodyAttributes, setHeadComponents }) {
   setHtmlAttributes({
     lang: "en" 
   });
@@ -6,4 +6,8 @@ export function onRenderBody({ setHtmlAttributes, setBodyAttributes }) {
   setBodyAttributes({
       tabIndex: '-1'
   });
+
+  setHeadComponents([
+    <meta name="theme-color" content="#ffffff" key="theme-color" />
+  ]);
 };
