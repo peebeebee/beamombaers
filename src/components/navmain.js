@@ -4,8 +4,10 @@ import "./navmain.scss";
 
 export default function NavMain({isNavShown, onNavigate}) {
     return (
+        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
         <nav onClick={() => onNavigate(false)}
              onMouseLeave={() => onNavigate(false)}
+             onKeyDown={(e) => { if (e.key === 'Escape') onNavigate(false); }}
              className={isNavShown 
                 ? 'nav-main nav-main--shown'
                 : 'nav-main nav-main--hidden'}>
