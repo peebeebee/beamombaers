@@ -21,6 +21,9 @@ export default function NavMain({isNavShown, onNavigate}) {
             <Link className="nav__item" to="/book" style={{'transitionDelay': '200ms'}}>
                 <div>book</div>
             </Link>
+            <a className="nav__item" href="https://beamombaersbags.com/" target="_blank" rel="noopener noreferrer" style={{'transitionDelay': '250ms'}}>
+                <div>bags</div>
+            </a>
         </nav>
     );
 }
